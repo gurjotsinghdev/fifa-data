@@ -3,28 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League Match Results Visualizations</title>
+    <title>People Data Visualizations</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Premier League Match Results Visualizations</h1>
+    <h1>People Data Visualizations</h1>
     <nav>
         <ul>
-            <li><a href="#bar-chart">Bar Chart</a></li>
-            <li><a href="#pie-chart">Pie Chart</a></li>
-            <li><a href="#scatter-plot">Scatter Plot</a></li>
-            <li><a href="#line-chart">Line Chart</a></li>
-            <li><a href="#sankey-diagram">Sankey Diagram</a></li>
-            <li><a href="#map">Map</a></li>
+            <li><a href="#gender-bar-chart">Gender Bar Chart</a></li>
+            <li><a href="#job-title-bar-chart">Job Title Bar Chart</a></li>
+            <li><a href="#age-histogram">Age Histogram</a></li>
+            <li><a href="#birth-month-pie-chart">Birth Month Pie Chart</a></li>
+            <li><a href="#top-job-titles">Top 10 Job Titles Chart</a></li>
+            <li><a href="#birth-year-trend">Birth Year Line Chart</a></li>
         </ul>
     </nav>
     <div id="visualizations">
-        <div id="bar-chart"></div>
-        <div id="pie-chart"></div>
-        <div id="scatter-plot"></div>
-        <div id="line-chart"></div>
-        <div id="sankey-diagram"></div>
-        <div id="map"></div>
+        <!-- Gender Bar Chart -->
+        <div id="gender-bar-chart">
+            <h2>Gender Distribution (Bar Chart)</h2>
+            <p>This bar chart visualizes the distribution of individuals by gender. It shows the number of males and females in the dataset.</p>
+        </div>
+
+        <!-- Job Title Bar Chart -->
+        <div id="job-title-bar-chart">
+            <h2>Job Title Distribution (Bar Chart)</h2>
+            <p>This bar chart displays the distribution of job titles among individuals in the dataset. It helps to identify the most common job titles.</p>
+        </div>
+
+        <!-- Age Histogram -->
+        <div id="age-histogram">
+            <h2>Age Distribution (Histogram)</h2>
+            <p>This histogram shows the distribution of ages among individuals. It divides the dataset into bins, each representing a range of ages, and displays the count of individuals in each bin.</p>
+        </div>
+
+        <!-- Birth Month Pie Chart -->
+        <div id="birth-month-pie-chart">
+            <h2>Birth Month Distribution (Pie Chart)</h2>
+            <p>This pie chart shows the distribution of individuals based on their birth month. Each slice represents a different month, allowing you to see which months have the most or fewest births.</p>
+        </div>
+
+        <!-- Top 10 Job Titles Chart -->
+        <div id="top-job-titles">
+            <h2>Top 10 Job Titles by Frequency (Horizontal Bar Chart)</h2>
+            <p>This horizontal bar chart visualizes the top 10 most common job titles in the dataset. The length of each bar represents the number of individuals holding each job title.</p>
+        </div>
+
+        <!-- Birth Year Line Chart -->
+        <div id="birth-year-trend">
+            <h2>Birth Year Trend (Line Chart)</h2>
+            <p>This line chart shows the trend of the number of individuals born each year. It helps to identify patterns in birth rates over time.</p>
+        </div>
     </div>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="js/main.js"></script>
